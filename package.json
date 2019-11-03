@@ -1,5 +1,13 @@
 {
   "name": "spotymusic",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.11.2",
+    "@rails/webpacker": "^4.0.7",
+    "bulma": "0.7.2",
+    "jquery": "^3.4.1"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^3.9.0"
+  }
 }
