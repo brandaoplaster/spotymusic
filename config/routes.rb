@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'favorites/index'
+  get 'favorites/create'
+  get 'favorites/destroy'
   get 'albums/show'
   get 'artists/show'
   get 'categories/show'
