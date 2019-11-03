@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'search/index'
+  get 'search/new'
   get 'dashboard/index'
   get 'home/index'
   devise_for :users
