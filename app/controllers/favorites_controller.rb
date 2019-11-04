@@ -1,5 +1,8 @@
 class FavoritesController < ApplicationController
   def index
+    @favorite_albums = current_user.favorites.where(favoritable_type: "Album").map(&:favoritable)
+    @favorite_songs = current_user.favorites.where(favoritable_type: "Song").map(&:favoritable)
+    @favorite_artists = current_user.favorites.where(favoritable_type: "Artist").map(&:favoritable)
   end
 
   def create
