@@ -3,6 +3,8 @@ class FavoritesController < ApplicationController
   end
 
   def create
+    @favoritable = current_user.favorites.new(favoritable_type: params[:favoritable_type], favoritable_id: params[:id])
+    @favoritable.save
   end
 
   def destroy
