@@ -2,7 +2,9 @@
   <div class="albums">
     <h2 class="is-size-5">Tocadas Recentemente</h2>
     <div class="columns is-multiline is-mobile">
-      <%= render @recent_albums %>
+      <% if @recent_albums %>
+        <%= render @recent_albums %>
+      <% end %>
     </div>
   </div>
 
@@ -11,7 +13,9 @@
   <div class="albums">
     <h2 class="is-size-5">Recomendadas</h2>
     <div class="columns is-multiline is-mobile">
-      <%= render @recommended_albums %>
+      <% if @recommended_albums %>
+        <%= render @recommended_albums %>
+      <% end %>
     </div>
   </div>
 </section>
