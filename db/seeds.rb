@@ -6,22 +6,22 @@ tmp_dir = Rails.root.join("tmp")
 
 
 rock = Category.create(name: "Rock")
-rock.image.attach(io: File.open("#{tmp_dir}/seed_files/rock.png"), filename: "rock.png")
+rock.photo.attach(io: File.open("#{tmp_dir}/seed_files/rock.png"), filename: "rock.png")
 
 blues = Category.create(name: "Blues")
-blues.image.attach(io: File.open("#{tmp_dir}/seed_files/blues.png"), filename: "blues.png")
+blues.photo.attach(io: File.open("#{tmp_dir}/seed_files/blues.png"), filename: "blues.png")
 
 country = Category.create(name: "Country")
-country.image.attach(io: File.open("#{tmp_dir}/seed_files/country.png"), filename: "country.png")
+country.photo.attach(io: File.open("#{tmp_dir}/seed_files/country.png"), filename: "country.png")
 
 jazz = Category.create(name: "Jazz")
-jazz.image.attach(io: File.open("#{tmp_dir}/seed_files/jazz.png"), filename: "jazz.png")
+jazz.photo.attach(io: File.open("#{tmp_dir}/seed_files/jazz.png"), filename: "jazz.png")
 
 
 # ANDREW HOWS
 
 andrew_howes = Artist.create(name: "Andrew Howes")
-andrew_howes.photo.attach(io: File.open("#{tmp_dir}/seed_files/andrew_howes.jpg"), filename: "andrew_howes.jpg")
+andrew_howes.image.attach(io: File.open("#{tmp_dir}/seed_files/andrew_howes.jpg"), filename: "andrew_howes.jpg")
 
 gubernator = andrew_howes.albums.create(title: "Gubernator", date: Time.strptime("18/05/2015", "%d/%m/%Y"), category: rock)
 gubernator.cover.attach(io: File.open("#{tmp_dir}/seed_files/gubernator.jpg"), filename: "gubernator.jpg")
@@ -51,7 +51,7 @@ waiting.file.attach(io: File.open("#{tmp_dir}/seed_files/musics/waiting.mp3"), f
 # YELLOW CHAIR
 
 yellow_chair = Artist.create(name: "Yellow Chair")
-yellow_chair.photo.attach(io: File.open("#{tmp_dir}/seed_files/yellow_chair.jpg"), filename: "yellow_chair.jpg")
+yellow_chair.image.attach(io: File.open("#{tmp_dir}/seed_files/yellow_chair.jpg"), filename: "yellow_chair.jpg")
 
 barcelona = yellow_chair.albums.create(title: "Barcelona", date: Time.strptime("07/01/2008", "%d/%m/%Y"), category: rock)
 barcelona.cover.attach(io: File.open("#{tmp_dir}/seed_files/barcelona.jpg"), filename: "barcelona.jpg")
@@ -83,7 +83,7 @@ coronation_pope_francis.file.attach(io: File.open("#{tmp_dir}/seed_files/musics/
 # WAYLON THORNTON
 
 waylon_thornton = Artist.create(name: "Waylon Thornton")
-waylon_thornton.photo.attach(io: File.open("#{tmp_dir}/seed_files/waylon_thornton.jpg"), filename: "waylon_thornton.jpg")
+waylon_thornton.image.attach(io: File.open("#{tmp_dir}/seed_files/waylon_thornton.jpg"), filename: "waylon_thornton.jpg")
 
 mystery_club = waylon_thornton.albums.create(title: "Mystery Club", date: Time.strptime("29/06/2011", "%d/%m/%Y"), category: rock)
 mystery_club.cover.attach(io: File.open("#{tmp_dir}/seed_files/mystery_club.jpg"), filename: "mystery_club.jpg")
@@ -101,7 +101,7 @@ favorite_secrets.file.attach(io: File.open("#{tmp_dir}/seed_files/musics/favorit
 # BREAK THE BANS
 
 break_the_bans = Artist.create(name: "Break the Bans")
-break_the_bans.photo.attach(io: File.open("#{tmp_dir}/seed_files/break_the_bans.jpg"), filename: "break_the_bans.jpg")
+break_the_bans.image.attach(io: File.open("#{tmp_dir}/seed_files/break_the_bans.jpg"), filename: "break_the_bans.jpg")
 
 covers_besides = break_the_bans.albums.create(title: "Covers & B-sides", date: Time.strptime("29/07/2013", "%d/%m/%Y"), category: blues)
 covers_besides.cover.attach(io: File.open("#{tmp_dir}/seed_files/covers_besides.jpg"), filename: "covers_besides.jpg")
@@ -113,7 +113,7 @@ how_can_i_love_her.file.attach(io: File.open("#{tmp_dir}/seed_files/musics/how_c
 # CULLAH
 
 cullah = Artist.create(name: "Cullah")
-cullah.photo.attach(io: File.open("#{tmp_dir}/seed_files/cullah.jpg"), filename: "cullah.jpg")
+cullah.image.attach(io: File.open("#{tmp_dir}/seed_files/cullah.jpg"), filename: "cullah.jpg")
 
 be_love_not_fear = cullah.albums.create(title: "Be Love Not Fear", date: Time.strptime("29/07/2013", "%d/%m/%Y"), category: blues)
 be_love_not_fear.cover.attach(io: File.open("#{tmp_dir}/seed_files/be_love_not_fear.jpg"), filename: "be_love_not_fear.jpg")
@@ -140,7 +140,7 @@ aisling.file.attach(io: File.open("#{tmp_dir}/seed_files/musics/aisling.mp3"), f
 # HANDMADE MOMENTS
 
 handmade_moments = Artist.create(name: "Handmade Moments")
-handmade_moments.photo.attach(io: File.open("#{tmp_dir}/seed_files/handmade_moments.jpg"), filename: "handmade_moments.jpg")
+handmade_moments.image.attach(io: File.open("#{tmp_dir}/seed_files/handmade_moments.jpg"), filename: "handmade_moments.jpg")
 
 paw_paw_tree = handmade_moments.albums.create(title: "Paw Paw Tree", date: Time.strptime("29/07/2013", "%d/%m/%Y"), category: country)
 paw_paw_tree.cover.attach(io: File.open("#{tmp_dir}/seed_files/paw_paw_tree.jpg"), filename: "paw_paw_tree.jpg")
@@ -161,7 +161,7 @@ coffee_chocolate_earth.file.attach(io: File.open("#{tmp_dir}/seed_files/musics/c
 # DEE YAN-KEY
 
 dee_yan_key = Artist.create(name: "Dee Yan-Key")
-dee_yan_key.photo.attach(io: File.open("#{tmp_dir}/seed_files/dee_yan_key.jpg"), filename: "dee_yan_key.jpg")
+dee_yan_key.image.attach(io: File.open("#{tmp_dir}/seed_files/dee_yan_key.jpg"), filename: "dee_yan_key.jpg")
 
 years_and_years_ago = dee_yan_key.albums.create(title: "Years and Years Ago",  date: Time.strptime("17/05/2011", "%d/%m/%Y"), category: jazz)
 years_and_years_ago.cover.attach(io: File.open("#{tmp_dir}/seed_files/years_and_years_ago.jpg"), filename: "years_and_years_ago.jpg")
@@ -195,7 +195,7 @@ antares.file.attach(io: File.open("#{tmp_dir}/seed_files/musics/antares.mp3"), f
 # KING IMAGINE
 
 king_imagine = Artist.create(name: "King Imagine")
-king_imagine.photo.attach(io: File.open("#{tmp_dir}/seed_files/king_imagine.jpg"), filename: "king_imagine.jpg")
+king_imagine.image.attach(io: File.open("#{tmp_dir}/seed_files/king_imagine.jpg"), filename: "king_imagine.jpg")
 
 inside = king_imagine.albums.create(title: "Inside",  date: Time.strptime("30/09/2012", "%d/%m/%Y"), category: jazz)
 inside.cover.attach(io: File.open("#{tmp_dir}/seed_files/inside.jpg"), filename: "inside.jpg")
@@ -216,6 +216,7 @@ freddie_mercury.favorites.create(favoritable: trinity)
 freddie_mercury.favorites.create(favoritable: paw_paw_tree)
 freddie_mercury.favorites.create(favoritable: everything_zen)
 freddie_mercury.favorites.create(favoritable: gubernator)
+
 freddie_mercury.recently_heards.create(album: inside)
 freddie_mercury.recently_heards.create(album: trinity)
 freddie_mercury.recently_heards.create(album: gubernator)
@@ -223,6 +224,7 @@ freddie_mercury.recently_heards.create(album: the_great_bear)
 
 diana_ross = User.create(name: "Diana Ross", email: "diana@ross.com", password: "123456", password_confirmation: "123456")
 diana_ross.favorites.create(favoritable: trinity)
+
 diana_ross.recently_heards.create(album: the_great_bear)
 diana_ross.recently_heards.create(album: paw_paw_tree)
 diana_ross.recently_heards.create(album: aldebaran)
