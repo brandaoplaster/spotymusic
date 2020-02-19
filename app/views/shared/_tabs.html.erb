@@ -2,7 +2,7 @@
   <ul>
     <% if albums %>
       <li class="is-active">
-        <a target="#albums">Àlbums</a>
+        <a target="#albums">Álbums</a>
       </li>
     <% end %>
 
@@ -20,9 +20,9 @@
   </ul>
 </div>
 
-<div class="table-content">
+<div class="tabs-content">
   <% if albums %>
-    <div class="tab-item active" id="albums">
+    <div id="albums" class="tab-item active">
       <div class="columns is-mobile is-multiline">
         <%= render albums %>
       </div>
@@ -30,7 +30,7 @@
   <% end %>
 
   <% if artists %>
-    <div class="tab-item" id="artists">
+    <div id="artists" class="tab-item">
       <div class="columns is-mobile is-multiline">
         <%= render artists %>
       </div>
@@ -38,13 +38,14 @@
   <% end %>
 
   <% if songs %>
-    <div class="tab-item" id="songs">
+    <div id="songs" class="tab-item">
       <div class="columns is-multiline">
         <div class="column is-12">
-          <button class="button is-primary is-medium" id="play-all">
+          <button id="play-all" class="button is-primary is-medium">
             <span class="icon">
               <i class="fas fa-play-circle"></i>
-            </span>
+            </span> 
+            <span>Tocar Todas</span>
           </button>
         </div>
         <%= render songs %>
