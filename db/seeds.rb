@@ -221,6 +221,7 @@ freddie_mercury.recently_heards.build(album: inside)
 freddie_mercury.recently_heards.build(album: trinity)
 freddie_mercury.recently_heards.build(album: gubernator)
 freddie_mercury.recently_heards.build(album: the_great_bear)
+freddie_mercury.save
 
 diana_ross = User.create(name: "Diana Ross", email: "diana@ross.com", password: "123456", password_confirmation: "123456")
 diana_ross.favorites.build(favoritable: trinity)
@@ -228,11 +229,14 @@ diana_ross.favorites.build(favoritable: trinity)
 diana_ross.recently_heards.build(album: the_great_bear)
 diana_ross.recently_heards.build(album: paw_paw_tree)
 diana_ross.recently_heards.build(album: aldebaran)
+diana_ross.save
 
 michael_jackson = User.create(name: "Michael Jackson", email: "michael@jackson.com", password: "123456", password_confirmation: "123456")
 michael_jackson.favorites.build(favoritable: trinity)
 michael_jackson.favorites.build(favoritable: paw_paw_tree)
+michael_jackson.save
 
 celine_dion = User.create(name: "Celine Dion", email: "celine@dion.com", password: "123456", password_confirmation: "123456")
 celine_dion.favorites.build(favoritable: trinity)
 celine_dion.favorites.build(favoritable: everything_zen)
+celine_dion.save
